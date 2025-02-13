@@ -1,0 +1,313 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+
+.bar1 {
+  height: 40px;
+  background-color: white;
+  box-shadow: 1px 1px 8px 0 #555;
+
+}
+
+.bar1 .box1 {
+  width: 5%;
+  height: 100%;
+  float: left;
+  background-color: papayawhip;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bar1 .box1 i {
+  cursor: pointer;
+  opacity: 0.8;
+  font-size: 25px;
+}
+
+.bar1 .box1 i:hover {
+
+  opacity: 1;
+}
+
+.bar1 .box2 {
+  width: 75%;
+  height: 100%;
+  float: left;
+  background-color: red;
+  display: flex;
+  align-items: center;
+  padding-left: 7px;
+
+  box-shadow: 1px 1px 8px 0 #ccc;
+}
+
+.bar1 .box3 {
+  width: 20%;
+  height: 100%;
+  float: left;
+  background-color: pink;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.bar1 .box3 #sign-out {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.bar1 .box3 #sign-out:hover {
+
+  opacity: 1;
+}
+
+.left-menu {
+  width: 5%;
+  height: 100%;
+  background-color: rgba(0, 255, 255, 0.205);
+  box-shadow: 1px 1px 8px 0 #555;
+  position: fixed;
+  top: 40px;
+  left: 0;
+  z-index: 1;
+}
+
+.left-menu ul li {
+
+  position: relative;
+}
+
+.left-menu ul li a {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  width: 100%;
+  background-color: pink;
+  color: black;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+}
+
+.left-menu ul li a:hover {
+  background-color: aqua;
+}
+
+.left-menu ul li ul.sub-menu {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 200px;
+  background-color: aqua;
+  display: none;
+}
+
+.left-menu ul li ul.sub-menu li a {
+  justify-content: left;
+  flex-direction: row;
+  padding-left: 8px;
+  border: 1px solid red;
+  height: 80px;
+}
+
+.left-menu ul li:hover .sub-menu {
+  display: block;
+}
+
+.container {
+  width: 95%;
+  height: 100%;
+  background-color: aqua;
+  position: fixed;
+  right: 0;
+  top: 41px;
+  padding: 15px;
+}
+
+.container .box {
+  width: 100%;
+  float: left;
+  background-color: wheat;
+}
+
+.container .box ul {
+  float: left;
+}
+
+.container .box ul li {
+  float: left;
+}
+
+.container .box ul li #btnAdd {
+
+  display: block;
+  padding: 7px 20px;
+  background-color: rebeccapurple;
+  color: palevioletred;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.container .box ul li #btnAdd:hover {
+  opacity: 0.9;
+}
+
+.container .box .ul2 {
+  margin-left: 20%;
+}
+
+.container .box .ul3 {
+  float: right;
+}
+
+#tblData {
+  width: 100%;
+  background-color: #555;
+  margin-top: 8px;
+  float: left;
+}
+
+#tblData {
+  padding: 5px;
+  border: 1px solid #ccc;
+  font-size: 12px;
+}
+
+#tblData tr td {
+  padding: 7px;
+  border: 1px solid #ccc;
+  font-size: 13px;
+}
+
+#tblData tr td {
+  padding: 9px;
+  border: 1px solid #ccc;
+  font-size: 13px;
+}
+
+#tblData tr:nth-child(even) td {
+  background-color: aqua;
+}
+
+#tblData tr:nth-child(odd) td {
+  background-color: coral;
+}
+
+.popup {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.253);
+  z-index: 99;
+  top: 0;
+  left: 0;
+}
+
+.frm {
+  width: 500px;
+  background-color: #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.frm .header {
+  width: 100%;
+  height: 40px;
+  background-color: #ccc;
+  float: left;
+  display: flex;
+  align-items: center;
+  padding-left: 8px;
+  position: relative;
+}
+
+.frm .btnClose {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 100%;
+  background-color: red;
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.frm .btnClose:hover {
+  opacity: 0.9;
+}
+
+.frm .body {
+  width: 100%;
+  float: left;
+  background-color: #ccc;
+  padding: 8px;
+
+}
+
+label {
+  width: 100%;
+  float: left;
+}
+
+.frm-control {
+  width: 100%;
+  float: left;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #555;
+  margin-bottom: 8px;
+}
+
+.footer {
+  width: 100%;
+  float: left;
+  padding: 3px;
+  background-color: #555;
+}
+
+.btnSave {
+  float: right;
+  padding: 8px 15px;
+  background-color: blue;
+  color: #ccc;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.btnSave:hover {
+  opacity: 0.9;
+}
+
+.img-box {
+  width: 80px;
+  height: 80px;
+  float: left;
+  border: 1px solid #333;
+  background-image: url('image.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.img-box input {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+  float: left;
+}
