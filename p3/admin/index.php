@@ -26,22 +26,22 @@
    <div class="left-menu">
 <ul>
     <li>
-        <a href="">
+        <a >
         <i class="fa-solid fa-user"></i>
             <span>User</span>
     </a>
 </li>
 <li>
-        <a href="">
+        <a >
         <i class="fa-sharp fa-solid fa-plus"></i>
             <span>Set up</span>
     </a>
     <ul class="sub-menu">
-        <li>
-            <a href="">Menu</a>
-        </li>
-        <li>
-            <a href="">News</a>
+        <li data-opt="0">
+            <a >Menu</a>
+        </li >
+        <li data-opt="1">
+            <a>News</a>
         </li>
     </ul>
 </li>
@@ -84,7 +84,7 @@
         </tr>
         <tr>
             <td>1</td>
-            <td>Html</td>
+            <td>Htmld</td>
             <td>30</td>
             <td>1</td>
             <td></td>
@@ -98,7 +98,7 @@
         </tr>
     </table>
 </div>
-<div class="popup">
+<!-- <div class="popup">
 <div class="frm">
     <div class="header">
        <span> Rean web</span>
@@ -128,6 +128,7 @@
         </div>
     </div>
 </div>
-</div>
+</div> -->
 </body>
+<script src="js/index.js"></script>
 </html>
