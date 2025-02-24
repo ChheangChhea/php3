@@ -98,6 +98,7 @@
 
 .left-menu ul li a:hover {
   background-color: aqua;
+  cursor: pointer;
 }
 
 .left-menu ul li ul.sub-menu {
