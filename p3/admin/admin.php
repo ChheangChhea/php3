@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,73 +10,74 @@
 
     <script src="js/jquery-3.2.1.min.js"></script>
 </head>
+
 <body>
     <div class="bar1">
         <div class="box1">
-         <i class="fas fa-bars" id="btnMenu"></i>
+            <i class="fas fa-bars" id="btnMenu"></i>
         </div>
         <div class="box2">
-             New
+            New
         </div>
         <div class="box3">
-        <span>WERTY@5678bhnj</span>
-        <i class="fa-solid fa-right-from-bracket"class="signOut"></i>
+            <span>WERTY@5678bhnj</span>
+            <i class="fa-solid fa-right-from-bracket" class="signOut"></i>
 
         </div>
     </div>
-   <div class="left-menu">
-<ul>
-    <li>
-        <a >
-        <i class="fa-solid fa-user"></i>
-            <span>User</span>
-    </a>
-</li>
-<li>
-        <a >
-        <i class="fa-sharp fa-solid fa-plus"></i>
-            <span>Set up</span>
-    </a>
-    <ul class="sub-menu">
-        <li data-opt="0">
-            <a >Menu</a>
-        </li >
-        <li data-opt="1">
-            <a>News</a>
-        </li>
-    </ul>
-</li>
-</ul>
+    <div class="left-menu">
+        <ul>
+            <li>
+                <a>
+                    <i class="fa-solid fa-user"></i>
+                    <span>User</span>
+                </a>
+            </li>
+            <li>
+                <a>
+                    <i class="fa-sharp fa-solid fa-plus"></i>
+                    <span>Set up</span>
+                </a>
+                <ul class="sub-menu">
+                    <li data-opt="0">
+                        <a>Menu</a>
+                    </li>
+                    <li data-opt="1">
+                        <a>News</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
 
     </div>
     <div class="container">
-    <div class="box">
-     <ul class="ul1">
-        <li>
-            <a id="btnAdd">
-            <i class="fa-sharp fa-solid fa-plus"></i>
-                add
-            </a>
-        </li>
+        <div class="box">
+            <ul class="ul1">
+                <li>
+                    <a id="btnAdd">
+                        <i class="fa-sharp fa-solid fa-plus"></i>
+                        add
+                    </a>
+                </li>
 
-     </ul>
+            </ul>
 
-     <ul class="ul2">
-        <li>
-         <input type="button" value="Search">
-        </li>
-     </ul>
-     <ul class="ul3">
-     <li>
-            <input type="button" value="Back">
-        </li>
-        <li>
-            <input type="button" value="Next">
-        </li>
-     </ul>
-    </div>
-    <table id="tblData">
-        <tr>
+            <ul class="ul2">
+                <li>
+                    <input type="button" value="Search">
+                </li>
+            </ul>
+            <ul class="ul3">
+                <li>
+                    <input type="button" value="Back">
+                </li>
+                <li>
+                    <input type="button" value="Next">
+                </li>
+            </ul>
+        </div>
+        <table id="tblData">
+            <!-- <tr>
             <th width="100px">ID </th>
             <th>Name</th>
             <th>Price </th>
@@ -95,10 +97,10 @@
             <td>30</td>
             <td>1</td>
             <td></td>
-        </tr>
-    </table>
-</div>
-<!-- <div class="popup">
+        </tr> -->
+        </table>
+    </div>
+    <!-- <div class="popup">
 <div class="frm">
     <div class="header">
        <span> Rean web</span>
@@ -131,4 +133,5 @@
 </div> -->
 </body>
 <script src="js/index.js"></script>
+
 </html>
