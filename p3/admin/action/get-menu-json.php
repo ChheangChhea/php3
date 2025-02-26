@@ -1,7 +1,7 @@
 <?php
 $cn= new mysqli("localhost","root","","php25_3");
 $cn->set_charset('utf8');
-$sql="SELECT * FROM tbl_menu";
+$sql="SELECT * FROM tbl_menu ORDER BY id DESC";
 $rs=$cn->query($sql);
 $data=array();
 while($row=$rs->fetch_array()){

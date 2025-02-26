@@ -45,6 +45,9 @@
                     <li data-opt="1">
                         <a>News</a>
                     </li>
+                    <li data-opt="2">
+                        <a>Ads</a>
+                    </li>
                 </ul>
             </li>
         </ul>
@@ -77,60 +80,9 @@
             </ul>
         </div>
         <table id="tblData">
-            <!-- <tr>
-            <th width="100px">ID </th>
-            <th>Name</th>
-            <th>Price </th>
-            <th>Status</th>
-            <th>Action</th>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>Htmld</td>
-            <td>30</td>
-            <td>1</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>Html</td>
-            <td>30</td>
-            <td>1</td>
-            <td></td>
-        </tr> -->
+           
         </table>
     </div>
-    <!-- <div class="popup">
-<div class="frm">
-    <div class="header">
-       <span> Rean web</span>
-       <div class="btnClose">
-       <i class="fa-solid fa-xmark"></i>
-       </div>
-    </div>
-    <div class="body">
-   <label for="">ID</label>
-   <input type="text" name="" id="txt-id" class="frm-control">
-
-   <label for="">Name</label>
-   <input type="text" name="" id="txt-id" class="frm-control">
-
-   <label for="">Price</label>
-   <input type="text" name="" id="txt-price" class="frm-control">
-   <label for="">Photo</label>
-   <div class="img-box">
-<input type="file" name="" id="">
-   </div>
-
-    </div>
-    <div class="footer">
-        <div class="btnSave">
-        <i class="fa-solid fa-floppy-disk"></i>
-            save
-        </div>
-    </div>
-</div>
-</div> -->
 </body>
 <script src="js/index.js"></script>
 

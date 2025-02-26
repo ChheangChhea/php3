@@ -52,17 +52,22 @@ $(document).ready(function () {
         var eThis = $(this);
         frmOpt = eThis.data("opt");
         body.find('.container .box').show();
-        get_menu_data()
+        if(frmOpt==0){
+        get_menu_data();
+        }else if(frmOpt==1){
+        get_new_data();
+        }
     });
     //get menu data
     function get_menu_data() {
         var txt = '';
         var th = `<tr>
-                    <th width="100px">ID </th>
-                    <th>Name</th>
-                    <th>Photo </th>
-                    <th>OD</th>
-                    <th>Action</th>
+                    <th width="70">ID </th>
+                    <th >Name</th>
+                    <th width="50">Photo </th>
+                    <th width="50">OD</th>
+                    <th width="50">Status</th>
+                    <th width="50">Action</th>
                 </tr>`;
         $.ajax({
 
@@ -94,11 +99,25 @@ $(document).ready(function () {
             }
         });
     }
-
+      //get new
+    function get_new_data(){
+        var th=`<tr>
+                 <th width="100px">ID </th>
+                    <th>Title</th>
+                    <th>Photo</th>
+                    </tr>
+        `;
+        tbl.html(th);
+      }
     // Save menu
-    body.on('click', '.frm .btnSave', function () {
-        var eThis = $(this);
+    function save_menu(eThis){
+        var Parent=eThis.parents('.frm');
+        var id=Parent.find('#txt-id');
+        var title=Parent.find('#txt-title');
+        var od=Parent.find('#txt-od');
+        var status=Parent.find('#txt-status');
         var frm = eThis.closest('form.upl');
+        var Photo="123.pv";
         var frm_data = new FormData(frm[0]);
         $.ajax({
             url: 'action/save-menu.php',
@@ -107,13 +126,42 @@ $(document).ready(function () {
             contentType: false,
             cache: false,
             processData: false,
-            // dataType:"json",
+            dataType:"json",
             beforeSend: function () {
                 //work before success    
             },
             success: function (data) {
-                //work after success        
+                
+             var tr=`
+                 <tr>
+                    <td>${data.id}</td>
+                    <td>${title.val()}</td>
+                    <td>${Photo}</td>
+                    <td>${od.val()}</td>
+                    <td>${status.val()}</td>
+                    <td>100</td>
+                    
+                 </tr>
+             `     ;
+             tbl.find('tr:eq(0)').after(tr);
+             title.val('');
+             id.val(data.id+1);
+             od.val(data.id+1);
+             title.focus();
+
             }
-        });
+        }); 
+    }
+    function save_news(){
+        alert("23")
+    }
+    body.on('click', '.frm .btnSave', function () {
+        var eThis = $(this);
+       
+        if(frmOpt==0){
+        save_menu(eThis);
+        }else if(frmOpt==1){
+            save_news();
+        }
     });
 });
