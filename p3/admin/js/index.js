@@ -164,4 +164,40 @@ $(document).ready(function () {
             save_news();
         }
     });
+    //upl img
+    body.on('change','.frm #txt-file',function(){
+        var loading ="<div class='img-loading'></div>";
+        var imgRemove='<div class="img-close"></div>"';
+        var eThis=$(this);
+        var Parent= eThis.parents('.frm');
+        var imgBox=Parent.find('.img-box');
+        var imgName=Parent.find('#txt-img-name');
+        var frm = eThis.closest('form.upl');
+        var frm_data = new FormData(frm[0]);
+        $.ajax({
+            url: 'action/upl-img.php',
+            type: 'POST',
+            data: frm_data,
+            contentType: false,
+            cache: false,
+            processData: false,
+            dataType:"json",
+            beforeSend: function () {
+              imgBox.append(loading);
+            },
+            success: function (data) {
+                imgBox.css({"background-image":`url(img/${data.imgName})`});
+                imgName.val(data.imgName);
+                imgBox.append(imgRemove);
+                imgBox.find('.img-loading').remove();
+            }
+        }); 
+    })
+  //rrmove img
+  body.on('click','.frm .img-close',function(){
+    $(this).parent().css({"background-image":`url(style/photo.png)`});
+    $(this).remove();
+    $(this).parent().find("#txt-img-name").val("");
+    $(this).parent().find("#txt-file").val("");
+  });
 });

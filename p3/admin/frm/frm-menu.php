@@ -22,8 +22,10 @@
             </select>
             <label for="">Photo</label>
             <div class="img-box">
-                <input type="file" name="" id="">
+                
+                <input type="file" name="txt-file" id="txt-file">
                 <input type="hidden" name="txt-img-name" id="txt-img-name">
+       
             </div>
 
         </div>
